@@ -27,7 +27,7 @@ a {
 }
 
 .main-page-content {
-  width: 750px;
+  width: 1000;
 
   display: flex;
   flex-direction: column;
@@ -45,32 +45,32 @@ a {
 
 .left-align-section {
   min-height: 240;
-  width: 700;
-  max-width: 700;
+  width: 950;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   justify-content: start;
+  font-size: medium;
+  margin: 25 0 25 0;
 }
 
 .right-align-section {
   min-height: 240;
-  width: 700;
-  max-width: 700;
+  width: 950;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   justify-content: end;
+  font-size: medium;
+  margin: 25 0 25 0;
 }
 
 .right-align-section > * {
-  max-height: 200;
-  margin: 5px;
+  margin: 10px;
 }
 
 .left-align-section > * {
-  max-height: 200;
-  margin: 5px;
+  margin: 10px;
 }
 
 /*
