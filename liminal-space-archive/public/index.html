@@ -1,0 +1,81 @@
+<html>
+
+<head>
+  <title>Liminal Space Archive</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="index-text">
+    <h3 style="font-family: 'Trebuchet MS'">Liminal Space Archive</h3>
+  </div>
+
+  <div class="main-page-content invert-border">
+    
+    <div class="left-align-section">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/HobbyTown_USA_Oshkosh_interior_under_construction_2002_%28The_Backrooms%29.jpg">
+      <div>The Backrooms are the most famous example of a liminal space. They're a mysterious, 600 million square 
+        mile large building floor consisting only of walls. You can enter the backrooms by accidentally 
+        "no-clipping" out of reality and instantly appearing somewhere in the expanse of the backrooms. 
+        The backrooms originated from a 4chan post made in May 2019, which detailed the basic concept of the
+        backrooms and included the iconic image of the backrooms. There have been many interpretations 
+        and adaptations of the backrooms concept, the most famous of which is a YouTube series by Kane Pixels, 
+        with its pilot episode getting tens of millions of views. The image which inspired the backrooms was taken
+        in 2002 in a furniture store under renovation in Oshkosh, Wisconsin.</div>
+    </div>
+
+    <div class="right-align-section">
+      <div>The Pool Rooms are a spinoff of The Backrooms, containing a seemingly endless number of rooms with pools.
+        In some interpretations, the water in the pool rooms should not be swam in, as the water is infested with 
+        deadly bacteria and viruses. Some lore says the pool rooms are on a different floor from the backrooms 
+        and can be accessed from them.</div>
+      <img src="https://static.designboom.com/wp-content/uploads/2024/02/dream-pools-jared-pike-interview-designboom-02.jpg">
+    </div>
+
+    <div class="left-align-section">
+      <img src="https://preview.redd.it/u50pr7xkcc671.png?width=640&crop=smart&auto=webp&s=12e480d43607ac680af2d33d223133d52d94b7f6">
+      <div>This image was taken in a Holiday Inn Express hotel in London which was made famous for its unique 
+        interior design. The image is of the recreational section of the hotel which is covered by a ceiling,
+        rather than the typical choice of a hole which lets in natural light. 
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+
+  /////////
+  // Slideshow code from https://www.w3schools.com/howto/howto_js_slideshow.asp
+  /////////
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
